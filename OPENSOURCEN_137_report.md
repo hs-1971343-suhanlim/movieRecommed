@@ -147,3 +147,4 @@ ___
 
 DB erd schema
 <img src="./GUI/박도현스키마.png" alt="박도현erd">
+![image](https://user-images.githubusercontent.com/51906310/205366864-3aa6ada9-d191-4958-8180-29fc01843d43.png)
