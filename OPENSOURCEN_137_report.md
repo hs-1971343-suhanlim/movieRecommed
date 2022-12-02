@@ -142,3 +142,8 @@ ___
 * 상세화면
 
 ---
+
+
+
+DB erd schema
+<img src="./GUI/박도현스키마.png" alt="박도현erd">
