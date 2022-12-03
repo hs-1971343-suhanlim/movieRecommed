@@ -542,7 +542,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-###기술스택
+### 기술스택
 
 Language : JavaScript, Python
 
@@ -550,7 +550,7 @@ Library & Framework : React, BootStrap, ReactNaive, Django, PytorchFM
 
 Databse : peewee, ElastcSearch
 
-###AWS를 이용한 서비스 배포
+### AWS를 이용한 서비스 배포
 
 1. EC2 사이트의 상태를 집계
 
