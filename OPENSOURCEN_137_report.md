@@ -543,4 +543,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-###오픈소스 간단정리 및 서비스배포
+#### 기술스택
+
+Language : JavaScript, Python
+
+Library & Framework : React, BootStrap, ReactNaive, Django, PytorchFM
+
+Databse : peewee, ElastcSearch
+
+#### AWS를 이용한 서비스 배포
+
+1. EC2 사이트의 상태를 집계
+
+2. 웹 사이트에서 수집한 로그 및 매출 데이터 저장.
+
+3. 집계 분석한 결과를 송출
+
+4. EC2(EC사이트) -> 게이트웨이 웨드 포인트.
+
+5. 가상네트워크에서 모은 로그데이터나 매출 데이터를 S3로 저장
+
+6. Redshift에서 집계와 분석.
+
+7. 다시 S3로 결과 보내기.
