@@ -58,10 +58,12 @@ ___
 
 ___
 
-Movie
+### DFD 데이터 흐름도
 
 ![DFD버전2](https://user-images.githubusercontent.com/51906310/205207274-e3f67389-0ab0-450a-9996-f7d2ee4aea76.png)
 
+___
+### 사용 데이터 세트
 
 ### MovieLens 데이터 세트
 
