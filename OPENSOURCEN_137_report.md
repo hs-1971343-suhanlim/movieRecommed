@@ -489,3 +489,31 @@ PyTorch는 자동 미분 모듈의 기법을 사용한다. 레코더는 수행�
 
 장고란 파이썬으로 만들어진 무료 오픈소스 프레임워크로 쉽고 빠르게 웹사이트를 개발 할수있도록 돕는 구성요소로 이루어진 웹 프레임 워크이다. 웹사이트를 구축할 때, 비슷한 유형의 요소들이 필요하다. 대표적으로 회원가입, 로그인, 로그아웃과 같이 사용자 인증을 다루는 방법이나 웹 사이트의 관리자 패널, 폼, 파일 업로드에도 사용된다. 프레임워크는 어떤 어플리케이션을 개발하기 위해 필요한 기본적인 클래스와 라이브러리등이 모두 포함되어 있는 환경을 의미한다.장고의 특징으로는 MTV 패턴을 사용한다. MTV란 MVC 디자인 패턴과 동일한 뜻으로 소프트웨어가 서비스하는 방식에 대한 패턴을 지칭한다. 그리고 강력한 ORM 기능을 지원한다. ORM이란 객체와 관계형 DB를 연결해주는 개념을 의미한다. 생성한 객체를 SQL문으로 자동 변환하여 데이터를 다루는것이다. 이기능 덕분에 SQL문을 사용하지 않고도 DB 데이터를 관리 할 수 있습니다. 직접 SQL 쿼리를 작성하지 않아도 파이썬 코드로 DB를 조작 가능함을 의미하여 이는 개발자가 애플리케이션의 로직 작성에 집중할 수 있도록 도움을준다. 또한 자체적인 템플릿을 지원한다. Django Template을 지원하며, 템플릿 태그를 사용해 HTML 템플릿에 context로 전송된 데이털르 사용 할 수 있고 이는 동적인 페이지를 구현하는데 도움을 준다.마지막으로 소스코드의 변경 사항을 자동으로 반영한다. 장고는 자동으로 .py 파일의 변동을 감시할뿐만 아니라 변경이 감지될 경우 변경 내역을 자동으로 반영해준다. 따라서 코드를 변경할 때마다 수동으로 웹서버를 재시작 할 필요가 없다. Flask라는 같은 파이썬 웹프레임워크와 높은 유사도를 보이는데 Flask는 Micro Framework를 철학으로 만들어진 프레임워크로 웹 개발을 위한 최소한의 기능만 지원한다. 높은 자유도를 지원하기 때문에 프레임워크의 틀에 얽매이지 않고 본인이 원하는 방향으로 개발이 가능하다는 장점이 있지만 장고는 웹 개발을 위한 거의 모든 기능을 지원한다. 이는 높은 생산성과 안정성을 보장하지만 프레임워크가 제시하는 틀에서 벗어날 수 없다는 단점이 있다. 예를 들자면 Flask는 레고, Django는 프라모델이라고 생각 할 수 있다. Django의 장점으로는 파이썬을 기반으로 한만큼 진입 장벽이 낮은 편이다. 생산성이 높고 개발 비용을 꽤 절감시킬 수 있고 URL 디자인이 매우 편리하다. 파이썬 기반이기 떄문에 머신러닝, 데이터 분석 라이브러리와 융합하여 사용하기 편리하다. 출시된지 오랜 시간이 흘렀지만 다른 대표적인 애플리케이션처럼 성공적으로 도입된 사례가 많은만큼 안정성과 기능이 충분히 검정되었고 커뮤니티 활동이 활발하고, 관련 문서가 많다. 단점으로는 파이썬을 기반으로 만들어졌기 때문에 파이썬의 단점들은 속도가 느리고 속도가 느림으로써 메모리 소모량이 크고 애플리케이션 빌드가 느리기 떄문에 효율적인 게임과 같은것들을 개발하기에는 적합하지 않다. 숙련되기 위해선 Django 자체에 대한 이해도 뿐만 아니라 파이썬에 대해서도 높은 이해도를 요구한다. 
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+## PeeWee
+![image](http://docs.peewee-orm.com/en/latest/_images/peewee3-logo.png)
+
+ PeeWee는 python 3.6버전으로 개발된 ORM(객체로 구성한 데이터를 관계형 데이터베이스에 연결(맵핑)하고, 데이터에 대해 쿼리를 보내고 관리할 수 있는 도구)이다. Django ORM과  비슷한 model layer를 가지고 있으며 배우기 쉽고 직관적으로 사용이 가능하다. 기능은 SQLite, mySQL, PostgreSQL, cockroachdb를 지원한다. 테스트 툴, 스키마 마이그레이션 시스템을 위한 확장 기능을 애드온 형태로 사용이 가능하다. 모델 선언은 Django와 SQLAlchemy와 비슷한 형식을 띈다. 
+ PeeWee는 .github/workflows, docs, examples, playhouse, tests 폴더와 .gitignore, .readthedocs.yaml, .travis.yml, .travis_deps.sh, bench.py, CHANGELOG.md, LICENSE, MANIFEST.in, peewee.py, pwiz.py, README.rst, runtests.py, setup.py, TODO.rst 파일로 이루어져 있다. cockroachdb 관련 기능은 .github/workflows 폴더(cockroachdb에 CI 수행)와 runtests.py(cockroachdb에 대한 코드와 문서들이 담겨 있음), .travis.yml(cockroachdb에서 세이브포인트들을 지원) 파일이 수행한다. sqlite 관련 기능은 .travis_deps.sh(CI로 최신 sqlite를 만드는 걸 시도)가 수행하고, pwiz.py는 기본 엔진을 더 잘 처리하게 해준다. MANIFEST.in은 C 소스들을 담고 있다. 이 밖에도 README.rst 파일에는 PeeWee ORM에 대한 간단한 소개가 담겨져 있고, TODO.rst는 changelog를 업데이트하고 할 일들을 정리해주는 역할을 수행한다. 
+ MIT 라이센스(저작권 및 사용권 고지 사항만 보존하면 되는 조건을 가진 짧고 단순한 허가 사용권. 라이선스 저작물, 수정 및 더 큰 저작물은 소스 코드 없이 다른 용어로 배포될 수 있다.)를 따르고 있으며 라이센스 선언문은 다음과 같다.
+ 
+ Copyright (c) 2010 Charles Leifer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
