@@ -541,3 +541,28 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+
+###기술스택
+
+Language : JavaScript, Python, 
+Library & Framework : React, BootStrap, ReactNaive, Django, PytorchFM
+Databse : peewee, ElastcSearch
+
+###AWS를 이용한 서비스 배포
+
+1. EC2 사이트의 상태를 집계
+
+2. 웹 사이트에서 수집한 로그 및 매출 데이터 저장.
+
+3. 집계 분석한 결과를 송출
+
+4. vpc(가상 네트워크)
+
+5. EC2(EC사이트) -> 게이트웨이 웨드 포인트.
+
+6. 로그 데이터나 매출 데이터를 S3로 저장
+
+7. Redshift에서 집계와 분석.
+
+8. 다시 S3로 결과 보내기.
